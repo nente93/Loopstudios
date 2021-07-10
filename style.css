@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/*============= HEADER CODE STARTS HERE ========== */
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/mobile/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;   
+    overflow: hidden;
+}
+.opennav{
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+a.close{
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+/* ======  Hero Text ======= */
+.logo-navlinks{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8%;
+}
+.logo{
+    flex: 1;
+    z-index: 2;
+}
+.logo img{
+    width: 160px;
+}
+.main-nav-links{
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    z-index: 1;
+    padding: 30px;
+    transition: all .5s ease-in-out;
+}
+.main-nav-links li{
+    list-style: none;
+    margin-right: 19px;
+    margin: 10px;
+}
+.main-nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(233, 233, 233);
+}
+.hero-text{
+    border: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    width: 80vw;
+}
+.hero-text h3{
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+/* ======= Main Content here ======== */
+#main-content{
+    width: 100%;
+    margin: 20% auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* leader section */
+.leader{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3%;
+}
+.leaderimage img{
+    width: 90%;
+}
+.leader-text{
+    width: 90%;
+}
+.leader h3{
+    font-size: 35px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: hsl(0, 0%, 22%);
+}
+.leader p{
+    line-height: 1.8;
+    font-weight: bold;
+    color: hsl(0, 0%, 41%);
+    padding: 0 8%;
+}
+
+/* ======= creation section starts here ====== */
+.creation{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.creation h3{
+    text-transform: uppercase;
+    font-size: 35px;
+    color:hsl(0, 0%, 22%);
+    margin-bottom: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.creation-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.images{
+    height: 180px;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.images:hover{
+    opacity: .5;
+}
+.image1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-deep-earth.jpg);
+}
+.image2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-night-arcade.jpg);
+}
+.image3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-soccer-team.jpg);
+}
+.image4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-grid.jpg);
+}
+.image5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)),url(images/mobile/image-from-above.jpg);
+}
+.image6{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-pocket-borealis.jpg);
+}
+.image7{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-curiosity.jpg);
+}
+.image8{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/mobile/image-fisheye.jpg);
+}
+
+.images p{
+    color: #fff;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-weight: 200;
+}
+a button{
+    background-color: transparent;
+    border: 2px solid #000;
+    padding: 10px 50px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+a button:hover{
+    background-color: black;
+    color: #fff;
+    transition: all .5s ease;
+}
+/* ======= footer section starts here */
+footer{
+    width: 100%;
+    background-color: rgb(2, 3, 3);
+    overflow-x: hidden;
+    color: #fff;
+    text-align: center;
+    padding: 15% 0;
+}
+.footer-nav{
+    margin-top: 20px;
+}
+.footer-nav li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-icon{
+    margin: 20px 0;
+}
+.footer-icon a{
+    margin-right: 10px;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+}
+
+/* ===== FOR LARGER SCREEEN-SIZE */
+@media all and (min-width: 768px) {
+    .opennav{
+        display: none;
+    }
+    a.close{
+        display: none;
+    }
+    .logo{
+        padding-top: 20px;
+    }
+   .logo-navlinks{
+       height: 12%;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 2.5rem 4rem;
+   }
+   .main-nav-links{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       background-color: transparent;
+       position: absolute;
+       top: 20px;
+       right: -150%;
+       height: 0;
+       width: auto;
+   }
+   .main-nav-links li{
+       list-style: none;
+       margin-right: 19px;
+   }
+   .main-nav-links li:hover{
+       background-color: greenyellow;
+   }
+   .main-nav-links li a{
+       color: #fff;
+       text-decoration: none;
+       font-size: 18px;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .hero-text{
+       width: 39%;
+       left: 30%;
+       top: 50%;
+       padding: 30px;
+       transform: translate(-50%, -25%);
+   }
+   .hero-text h3{
+       font-size: 3rem;
+   }
+
+
+   /* leader */
+   .leader{
+       flex-direction: row;
+       align-items: flex-end;
+   }
+   .leaderimage{
+    flex: 2;
+   }
+   .leader-text{
+       flex: 1;
+       text-align: left;
+       background-color: #fff;
+       margin-left: -300px;
+       padding: 50px 50px 0 50px;
+       width: 200px;
+   }
+   .leader-text h3{
+       font-size: 3rem;
+   }
+   .leader-text p{
+       padding: 0;
+   }
+
+   /* creation area */
+   .creation{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20%;
+    padding: 0 3%;
+    position: relative;
+}
+    .creation-image{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: flex-start; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+    .images{
+    height: 400px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+}
+.image1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-deep-earth.jpg);
+    margin-right: 20px;
+}
+.image2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-night-arcade.jpg);
+    margin-right: 20px;
+}
+.image3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-soccer-team.jpg);
+    margin-right: 20px;
+}
+.image4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-grid.jpg);
+    margin-right: 20px;
+}
+.image5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)),url(images/desktop/image-from-above.jpg);
+    margin-right: 20px;
+}
+.image6{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-pocket-borealis.jpg);
+    margin-right: 20px;
+}
+.image7{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-curiosity.jpg);
+    margin-right: 20px;
+}
+.image8{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.534)), url(images/desktop/image-fisheye.jpg);
+    margin-right: 20px;
+}
+.button{
+    position: absolute;
+    top: 0;
+    right: 160px;
+}
+    .heading{
+        margin-left: 100px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 5% 8%;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav li{
+        margin-right: 20px;
+        position: relative;
+    }
+    .footer-nav li::after{
+        content: " ";
+        height: 2px;
+        background-color: #fff;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: all 1s ease-in-out;
+    }
+    .footer-nav li:hover::after{
+        width: 100%;
+    }
+    
+    .footer-icon{
+        margin: 0  0 20px;
+       
+    }
+    .footer-icon a{
+        position: relative;
+    }
+    .footer-icon a::after{
+        content: " ";
+        height: 2px;
+        background-color: #fff;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: all 1s ease-in-out;
+    }
+    .footer-icon a:hover::after{
+        width: 100%;
+    }
+}
